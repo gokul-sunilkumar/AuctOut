@@ -108,9 +108,12 @@ public class ChangeAuction extends HttpServlet {
 			}
 	
 	public java.sql.Date convertJavaDateToSqlDate(String date) throws ParseException {
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		 java.util.Date sDate = formatter.parse(date);
-	    return (new java.sql.Date(sDate.getTime()));
+                 System.out.println(sDate.toString());
+                 java.sql.Date d = new java.sql.Date(sDate.getTime());
+                 System.out.println(d.toString());
+	    return (d);
 	}
 
 }

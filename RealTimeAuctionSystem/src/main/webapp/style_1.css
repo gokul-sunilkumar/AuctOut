@@ -1,5 +1,5 @@
 body {
-	background: url("../images/photo_bg.jpg") no-repeat center center fixed;
+	background: url("../photo_bg.jpg") no-repeat center center fixed;
 	background-size: cover;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
@@ -10,7 +10,7 @@ body {
 
 /* Typography */
 h1#title {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'copperplate', fantasy;
 	font-weight: 300;
 	font-size: 3.2em;
 	color: white;

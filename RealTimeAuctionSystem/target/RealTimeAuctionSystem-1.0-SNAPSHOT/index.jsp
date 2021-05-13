@@ -8,9 +8,14 @@
 <link href="animate_1.css" rel="stylesheet" type="text/css"/>
 </head>  
 <body>  
+    <h1 id="title" class="hidden"><span id="logo">Auct <span>Out</span></span></h1>
     <form action="LoginServlet" method="post">  
+        <div class="login-box animated fadeInUp">
+			
         <fieldset style="width: 300px">  
-            <legend> AuctOut </legend>  
+            
+              
+            
             <table>  
                 <tr>  
                     <td>User ID</td>  
@@ -25,7 +30,9 @@
                     </form>
                     <form action="UserRegistration.jsp" method="get">
                     <td><input type="submit" value="Register" /></td> 
-                    </form>                               
+                    </form>  
+
+</div><!-- comment -->
                 </tr>  
             </table>  
         </fieldset>  
