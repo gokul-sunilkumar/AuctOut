@@ -29,8 +29,8 @@ import javax.servlet.http.Part;
 public class CreateAuction extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	static java.sql.Date sDate;
-	static java.sql.Date eDate;
+	static java.sql.Timestamp sDate;
+	static java.sql.Timestamp eDate;
 	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -109,8 +109,8 @@ public class CreateAuction extends HttpServlet {
 					
 					PreparedStatement pst1 = conn.prepareStatement(query1);
 					pst1.setString(1, sName);
-					pst1.setDate(2, sDate);
-					pst1.setDate(3, eDate);
+					pst1.setTimestamp(2, sDate);
+					pst1.setTimestamp(3, eDate);
 					pst1.executeUpdate();
 					
 					
@@ -126,12 +126,10 @@ public class CreateAuction extends HttpServlet {
 			                rd.forward(request,response);  
 			} } }
 	
-	public java.sql.Date convertJavaDateToSqlDate(String date) throws ParseException {
+	public java.sql.Timestamp convertJavaDateToSqlDate(String date) throws ParseException {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		 java.util.Date sDate = formatter.parse(date);
-                 System.out.println(sDate.toString());
-                 java.sql.Date d = new java.sql.Date(sDate.getTime());
-                 System.out.println(d.toString());
+                 java.sql.Timestamp d = new java.sql.Timestamp(sDate.getTime());
 	    return (d);
 	}
 }

@@ -5,9 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>My Bids</title>
+<link href="table.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<h2> My Bids </h2>
+<h2 style="text-align: center;color:white;font-family: 'copperplate', fantasy;font-size: 40px"> My Bids </h2>
 <% ArrayList<Integer> auctionid = (ArrayList<Integer>) request.getAttribute("auctionid");
 ArrayList<Integer> prodid = (ArrayList<Integer>) request.getAttribute("prodid");
 ArrayList<Float> bidvalue = (ArrayList<Float>) request.getAttribute("bidvalue");

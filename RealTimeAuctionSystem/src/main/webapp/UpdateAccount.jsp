@@ -5,12 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Update Account Details</title>
+<link href="style_2.css" rel="stylesheet" type="text/css" style="margin:auto;width: 50%"/>
 </head>
 <body>
-<a href="AddBalance.jsp">Add Balance</a><br/><br/>
-<a href="ChangePrivilege.jsp">Change Privilege</a><br/><br/>
-<a href="UpdateAddress.jsp">Update Existing Address</a><br/><br/>
-<a href="UpdateMobile.jsp">Update Phone Number</a><br/><br/>
+<a href="AddBalance.jsp" id="login-box">Add Balance</a><br/><br/>
+<a href="ChangePrivilege.jsp" id="login-box">Change Privilege</a><br/><br/>
+<a href="UpdateAddress.jsp" id="login-box">Update Existing Address</a><br/><br/>
+<a href="UpdateMobile.jsp" id="login-box">Update Phone Number</a><br/><br/>
 
 <br/><br/>
 <br/><br/>

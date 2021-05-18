@@ -48,15 +48,15 @@ public class MyAuctions extends HttpServlet {
         String name;
      //   String desc;
         float minprice;
-        Date startdate;
-        Date enddate;
+        Timestamp startdate;
+        Timestamp enddate;
         String active;
         ArrayList<Integer> auctionID= new ArrayList<Integer>();
         ArrayList<Integer> productID= new ArrayList<Integer>();
         ArrayList<String> prodName= new ArrayList<String>();
         ArrayList<Float> MinPrice= new ArrayList<Float>();
-        ArrayList<Date> StartDate = new  ArrayList<Date>();
-        ArrayList<Date> EndDate = new  ArrayList<Date>();
+        ArrayList<Timestamp> StartDate = new  ArrayList<Timestamp>();
+        ArrayList<Timestamp> EndDate = new  ArrayList<Timestamp>();
         ArrayList<String> Active =new ArrayList<String>();
         
 		Connection conn = null;  
@@ -82,8 +82,8 @@ public class MyAuctions extends HttpServlet {
         		    prodid= rsMyAuctions.getInt(2);
     			    name = rsMyAuctions.getString(3);
     			    minprice =rsMyAuctions.getFloat(4);
-    			    startdate = rsMyAuctions.getDate(5);
-    			    enddate = rsMyAuctions.getDate(6);
+    			    startdate = rsMyAuctions.getTimestamp(5);
+    			    enddate = rsMyAuctions.getTimestamp(6);
     			int a=rsMyAuctions.getInt(7);
     			if (a == 1){
     			 active= "Active";

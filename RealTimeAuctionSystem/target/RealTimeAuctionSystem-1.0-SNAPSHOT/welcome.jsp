@@ -4,13 +4,14 @@
 <head>  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">  
 <title>Welcome <%=session.getAttribute("name")%></title>  
+<link href="style_2.css" rel="stylesheet" type="text/css"/>
 </head>  
 <body>  
-    <h3>Login successful!!!</h3>  
-    <h4>  
-        Hello,  
-        <%=session.getAttribute("name")%></h4> 
-        Current Account Balance  <%=session.getAttribute("balance")%><br/>
+    <h3 id="title">   
+        Welcome
+        <%=session.getAttribute("name")%> </h3>
+        
+        <h5 id="sectitle"> Current Account Balance  <%=session.getAttribute("balance")%> </h5>
         <%
       int id = (Integer)session.getAttribute("id");
         try {
@@ -31,7 +32,7 @@
 	    {
 	    	int Id = rs.getInt(1); %>
 	    	<a href="productbid.jsp?Id=<%=Id%>">
-	        <img src=GetPhoto?Id=<%=Id%> alt="Mountain View" style="width:304px;height:228px;"
+	        <img src=GetPhoto?Id=<%=Id%> alt="Mountain View" style="width:204px;height:128px;padding-left:20px;padding-top: 10px;padding-bottom: 20px"
 	 onError="loadImage()" onAbort="loadImage()" />
 	 </a>
 
@@ -47,16 +48,16 @@
 		  
 <br/><br/>
 <form action="CreateAuction.jsp" method="get">
-                   <input type="submit" value="Create Auction" />
+                   <input type="submit" id="login-box" value="Create Auction" />
                    </form> 
 <form action="UpdateAccount.jsp" method="get">
-                   <input type="submit" value="Update Account Details" />
+                   <input type="submit" id="login-box" value="Update Account Details" />
                    </form>  
       <form action="MyAuctions" method="get">
-                   <input type="submit" value="My Auction" />
+                   <input type="submit" id="login-box" value="My Auction" />
                    </form>  
       <form action="MyBids" method="get">
-                   <input type="submit" value="My Bids" />
+                   <input type="submit" id="login-box" value="My Bids" />
                    </form>     
         
 </body>  

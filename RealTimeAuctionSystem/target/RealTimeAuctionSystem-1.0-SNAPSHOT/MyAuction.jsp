@@ -5,16 +5,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>My Auction</title>
+<link href="table.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<h2> My Auction </h2>
+<h2 style = "text-align: center;color:white;font-family: 'copperplate', fantasy;font-size: 40px"> MY AUCTION </h2>
 <% ArrayList<Integer> auctionid = (ArrayList<Integer>) request.getAttribute("auctionid");
 ArrayList<Integer> prodid = (ArrayList<Integer>) request.getAttribute("prodid");
 ArrayList<Float> minprice = (ArrayList<Float>) request.getAttribute("minprice");
 ArrayList<String> name = (ArrayList<String>) request.getAttribute("name");
 ArrayList<String> active = (ArrayList<String>) request.getAttribute("active");
-ArrayList<Date> startdate = (ArrayList<Date>) request.getAttribute("startdate");
-ArrayList<Date> enddate = (ArrayList<Date>) request.getAttribute("enddate");
+ArrayList<Timestamp> startdate = (ArrayList<Timestamp>) request.getAttribute("startdate");
+ArrayList<Timestamp> enddate = (ArrayList<Timestamp>) request.getAttribute("enddate");
 int i = 0;
 int length = auctionid.size();%>
 <table>

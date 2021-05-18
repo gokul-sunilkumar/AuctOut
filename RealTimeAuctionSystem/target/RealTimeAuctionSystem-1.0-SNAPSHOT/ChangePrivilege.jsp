@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Change Privilege</title>
+<link href="style_2.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <h3>Your current privilege is <%=session.getAttribute("type")%></h3>

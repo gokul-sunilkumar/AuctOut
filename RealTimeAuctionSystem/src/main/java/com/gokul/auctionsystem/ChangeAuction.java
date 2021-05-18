@@ -32,8 +32,8 @@ import javax.servlet.http.Part;
 @WebServlet("/ChangeAuction")
 public class ChangeAuction extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	static java.sql.Date sDate;
-	static java.sql.Date eDate;
+	static java.sql.Timestamp sDate;
+	static java.sql.Timestamp eDate;
        
     	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -89,8 +89,8 @@ public class ChangeAuction extends HttpServlet {
 					pst1.setInt(1, auctionid);
 					pst1.setInt(2, sellerid);
 					pst1.setInt(3, prodid);
-					pst1.setDate(4, sDate);
-					pst1.setDate(5, eDate);
+					pst1.setTimestamp(4, sDate);
+					pst1.setTimestamp(5, eDate);
 					pst1.setInt(6, active);
 					pst1.setInt(7, auctionid);
 					pst1.executeUpdate();
@@ -104,15 +104,13 @@ public class ChangeAuction extends HttpServlet {
 					e.printStackTrace();
 				}
 		       		        
-		       		    out.println("Auction susccessfully Updated!!");
+		       		    out.println("AUCTION SUCCESSFULLY UPDATED !!");
 			}
 	
-	public java.sql.Date convertJavaDateToSqlDate(String date) throws ParseException {
+	public java.sql.Timestamp convertJavaDateToSqlDate(String date) throws ParseException {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		 java.util.Date sDate = formatter.parse(date);
-                 System.out.println(sDate.toString());
-                 java.sql.Date d = new java.sql.Date(sDate.getTime());
-                 System.out.println(d.toString());
+                 java.sql.Timestamp d = new java.sql.Timestamp(sDate.getTime());
 	    return (d);
 	}
 

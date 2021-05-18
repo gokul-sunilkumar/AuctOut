@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />
 <title> Create Auction</title>
 </head>
+
 <body>
 <center><h1>Auction Details</h1></center>
 <form action="CreateAuction" method="post" enctype="multipart/form-data">

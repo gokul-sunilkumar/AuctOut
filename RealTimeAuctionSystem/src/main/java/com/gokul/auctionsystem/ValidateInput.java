@@ -1,4 +1,3 @@
-
 package com.gokul.auctionsystem;
 
 /**
@@ -81,17 +80,19 @@ public class ValidateInput {
             return status;
 	}
 	
-	public static boolean validateStartDateOfAuction(Date startDate){
-		Date d1= new Date() ;
+	public static boolean validateStartDateOfAuction(Timestamp startDate){
+		//Date d1= new Date() ;
+                long now = System.currentTimeMillis();
+                Timestamp d1 = new Timestamp(now);
                 System.out.println(d1.toString());
-		if(startDate.compareTo(d1)>0)
+		if(startDate.after(d1))
 			return true;
 		else
 		return false;					
 	}
 	
-	public static boolean validateEndDateOfAuction(Date startDate, Date endDate){	
-		if (endDate.compareTo(startDate)>= 0)
+	public static boolean validateEndDateOfAuction(Timestamp startDate, Date endDate){	
+		if (endDate.after(startDate))
 			return true;
 		else
 		return false;

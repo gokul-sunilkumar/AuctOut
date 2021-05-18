@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Add Balance</title>
 </head>
+<link href="style_2.css" rel="stylesheet" type="text/css"/>
 <jsp:include page="/GetCurrentDetails" />
 <body>
 Please confirm your card details and balance to be added:

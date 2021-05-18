@@ -1,12 +1,9 @@
-/Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/test.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/ConnectionConstants.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/RegistrationServlet.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/UpdatePhoneNumber.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/UpdateAuction.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/AddBalance.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/UpdateAddressDetails.java
-/Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/RateSeller.java
-/Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/EndOfAuction.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/ValidateInput.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/LoginDao.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/ProductBid.java
@@ -15,7 +12,6 @@
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/ProcessWinner.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/MyAuctions.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/ChangeAuction.java
-/Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/AmountReversal.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/ChangePrivilege.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/GetPhoto.java
 /Users/gokul/Documents/Java/Netbeans/RealTimeAuctionSystem/src/main/java/com/gokul/auctionsystem/GetBidDetails.java

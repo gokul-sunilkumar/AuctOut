@@ -47,8 +47,8 @@ public class GetBidDetails extends HttpServlet {
 	        String userName = "root";  
 	        String password = "mysql@123";  
 	        float minprice = 0;
-	        Date sDate;
-	        Date eDate;
+	        Timestamp sDate;
+	        Timestamp eDate;
 
 		 try {
 			 Class.forName(driver);
@@ -86,8 +86,8 @@ public class GetBidDetails extends HttpServlet {
 				    pst3.setInt(1, Integer.parseInt(Id));
 				    ResultSet rs3 = pst3.executeQuery();
 				    if (rs3.next()) {
-				    	 sDate=rs3.getDate(1);
-				    	 eDate = rs3.getDate(2);
+				    	 sDate=rs3.getTimestamp(1);
+				    	 eDate = rs3.getTimestamp(2);
 				    	
 				    	response.setContentType("TEXT/HTML");
 					    request.setAttribute("sdate", sDate);
